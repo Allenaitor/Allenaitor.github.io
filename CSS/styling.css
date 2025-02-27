@@ -1,5 +1,5 @@
 body {
-  background-color: #C5C5F0;
+  background-color: #e0f2ff;
 }
 
 h1 {
@@ -7,4 +7,41 @@ h1 {
   color: #28112B;
   font-family: "Garamond", serif;
   font-size: 2em;
+}
+
+td.right {
+  padding-left: 25;
+  text-align: right;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5e9cff;
+}
+
+li.nav {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3669ba;
+}
+
+.center {
+  text-align: center;
+}
+
+.active {
+  background-color: #a9b9c4;
 }
