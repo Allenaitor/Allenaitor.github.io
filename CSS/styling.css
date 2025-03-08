@@ -133,3 +133,16 @@ img {
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  ul.nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  li a {
+    width: 100%;
+  }
+  body {
+    padding-top: 350px;
+  }
+}
