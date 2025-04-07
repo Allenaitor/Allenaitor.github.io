@@ -21,8 +21,68 @@
       <p class="center"><a href="mailto:Alessandropbx@hotmail.com">Alessandropbx@hotmail.com</a></p>
     </header>
     <section>
-      <h2>Nothing Here Yet...</h2>
-      <p>Check Back Later!</p>
+      <h2>Text Analysis of "The Just-Wed Cook Book"</h2>
+      <p>The process of encoding the Just-Wed Cook Book and analyzing it through Voyant Tools revealed layers of meaning, structure, and cultural context that would have otherwise remained unnoticed. Both techniques offered complementary insights—encoding forced a close reading and structural interpretation, while Voyant's distant reading techniques exposed trends and emphases across the corpus. Together, they helped me see the cookbook not just as a collection of recipes, but as a cultural artifact that speaks to domestic norms, culinary traditions, and social practices of its time.</p>
+<br>
+      <h2>Encoding: A New Way of Reading</h2>
+      <p>When I began encoding, I had to slow down and examine every word of the cookbook. This close reading encouraged me to think not only about what was being said, but how it was being structured. For instance, I initially focused on structure using the following custom XML elements:</p>
+      <p><pre>
+&lt;recipe&gt;
+  &lt;title&gt;Devil's Food Cake&lt;/title&gt;
+  &lt;author>Mrs. John Smith&lt;/author>
+  &lt;ingredients>
+    &lt;ingredient>2 cups flour&lt;/ingredient>
+    &lt;ingredient>1 cup sugar&lt;/ingredient>
+    &lt;ingredient>1/2 cup cocoa&lt;/ingredient>
+  &lt;/ingredients>
+  &lt;instructions>
+    Mix dry ingredients, add wet ingredients, and bake at 350 degrees for 30 minutes.
+  &lt;/instructions>
+&lt;/recipe>
+</pre></p>
+    <p>This markup allowed me to preserve the logical structure of the text and distinguish between discrete recipes. In doing so, I began to notice patterns—for example, many recipes were attributed to women using their husbands' names, such as "Mrs. John Smith" or "Mrs. Robert Brown," which reflects early 20th-century gender norms and expectations about domestic roles. Encoding made these patterns easier to spot and catalog.
+In the clarity dimension of my encoding, I began marking up antiquated or ambiguous measurements like "wineglass" or "teacup" with:</p>
+<p><pre>&lt;measurement>1 wineglass&lt;/measurement></pre></p>
+<p>This allowed me to begin building a glossary or translation layer for modern readers. I also marked up references to brands like "Gold Medal Flour" and cooking techniques such as "cream the butter and sugar" using custom tags like <code>&lt;brand></code> and <code>&lt;technique></code>. This brought out the cultural specificity of the text. For example, the frequent appearance of Gold Medal Flour suggests strong brand loyalty or marketing influence, which is something a casual reader might overlook.
+In the meaning category, I tagged spices and flavorings like cinnamon, nutmeg, and vanilla using <code>&lt;flavor></code> and noted cookware like cake pans or molds under <code>&lt;equipment></code>. Doing this helped reveal what ingredients were considered staple or exotic. I also tagged recipe variations under <code>&lt;variation></code> when alternate ingredients or methods were proposed.
+Encoding transformed my relationship to the text. It made me not just a reader, but a collaborator in interpreting the material. I wasn't just consuming the content; I was curating, organizing, and interpreting it.</p>
+<br>
+<h2>Voyant: Distant Reading, Big Picture</h2>
+<p>After encoding, I imported the full text into Voyant Tools, which provided a different, macroscopic view. The word cloud highlighted dominant terms like "sugar," "flour," "butter," and "eggs," affirming what I suspected during encoding, that these were the backbone of early 20th-century American baking.
+The Trends tool showed how specific ingredients fluctuated across recipes. For instance, "vanilla" remained consistent, while "nutmeg" and "cinnamon" spiked at different parts of the book. This revealed taste preferences and perhaps even seasonal baking patterns.
+Using the Collocates feature, I saw that "cream" frequently appeared next to "butter" and "sugar," confirming the commonality of the creaming method. This was reinforced by my earlier <code>&lt;technique></code> tag during encoding. Voyant validated and extended what encoding had hinted at.
+Voyant also made it easier to quantify things I had only sensed while encoding. For example, I suspected that brand names like "Gold Medal" were rare but important. A frequency list showed that it only appeared a handful of times but almost always in prominent recipes, suggesting strategic brand placement. This added a layer of historical-economic analysis to the project.</p>
+<p>I also used Voyant's Context and Collocates tools to look at repeated phrases and associations:
+“Bake in moderate oven” appeared dozens of times, suggesting that oven temperature was often implied, not specified.
+“Cream butter and sugar” was a common first step in many recipes, appearing across cakes, cookies, and even some breads.
+This confirmed the technical standardization of preparation methods, though the language remains informal and assumes a degree of prior experience.
+Trends and Distribution
+The Trends feature in Voyant showed that certain ingredients spiked at various points:
+Cinnamon, nutmeg, and cloves appear in clusters, especially in winter-themed or holiday recipes.
+Vanilla maintains a steady presence across most of the text.
+Mentions of gelatin or molds appear in fewer recipes, concentrated in the latter part of the book, perhaps signaling a shift in dessert trends or newer culinary technology.
+These visualizations helped me think historically about food trends, what was considered “modern,” “traditional,” or seasonal in the 1920s.</p>
+<br>
+<h2>Comparing Both Methods</h2>
+<p>Encoding and Voyant both told me stories, but from different vantage points. Encoding made me zoom in; Voyant zoomed me out. Encoding helped me notice that many recipes are contributed by different women, offering a communal dimension to the cookbook. Voyant confirmed this by showing a high frequency of unique names and the word "Mrs.," pointing to a social network of shared domestic knowledge.
+The <code>&lt;variation></code> tag led me to notice how frequently the cookbook allows substitutions (e.g., butter or lard, different flours). In Voyant, I looked up the frequencies of "or," "substitute," and "variation" and confirmed this trend. This reflects a culture of improvisation and flexibility, likely due to economic or geographic constraints.</p>
+<br>
+<h2>Discoveries And What I Learned:</h2>
+<p>Encoding and using Voyant in tandem allowed me to discover several key things about the cookbook:
+First, I learned that historical cookbooks are more than just recipe compilations, they are cultural texts that reveal habits, tastes, gender roles, and domestic values. Through tags like <code>&lt;author></code>, I was able to see how women were publicly acknowledged (or not) for their contributions, with many recipes attributed to “Mrs. [Husband’s Name],” signaling the conventions of the time.
+Second, encoding made visible the implicit knowledge embedded in older recipes. Instructions are often minimal, assuming the cook already knows how to “beat egg whites until stiff” or “bake in a moderate oven.” By marking up <code>&lt;technique></code> and <code>&lt;note></code> elements, I could flag these areas for further interpretation or standardization.
+Third, I began to notice patterns I wouldn’t have without encoding. For instance, many recipes use similar base ingredients but diverge in flavor through just one or two additions, like adding nutmeg or lemon zest. This could be tagged under <code>&lt;flavor></code> and cross-referenced across the collection. That’s something I would never have noticed just reading casually.
+Through Voyant, I also discovered how distant reading could validate or complicate my impressions. For example, I had noticed that “butter” was a major ingredient, but seeing it top the word frequency list confirmed its central role in the culinary imagination of the time. Likewise, tracking flavoring agents like “vanilla” and “nutmeg” gave weight to the idea that baking was about delicate variations on a sweet, buttery base.
+Moreover, the encoding and visualization processes helped surface contradictions. Recipes often emphasized exactness in ingredient quantity (even when using vague terms like “teacup”), but were imprecise about timing, temperature, or baking technique. This suggests a cultural reliance on embodied knowledge, the kind of know-how that can't easily be transmitted on the page.
+Ultimately, these methods transformed how I interacted with the text. Rather than seeing the cookbook as a static archive, I came to understand it as a living record of domestic practice, shaped by time, place, and community. Encoding was not just a mechanical exercise, but an act of interpretation and care. Voyant, meanwhile, was not just a tool for graphs and charts, but a lens for finding patterns and asking better questions.</p>
+<br>
+<h2>Challenges and Reflections</h2>
+<p>Encoding is labor-intensive and interpretive. Deciding what to mark up and how to tag it is subjective, which introduces bias. Voyant, on the other hand, is quantitative and might miss nuance. Together, though, they balance each other. Encoding brings nuance to the data, and Voyant brings data to the nuance.
+In the future, I might refine my tags and expand the corpus to include similar cookbooks for comparison. I would also explore more advanced Voyant features or export data for visualization in tools like Tableau or Python.</p>
+<p>Encoding the Just-Wed Cook Book and analyzing the other texts through Voyant transformed a static historical text into a dynamic source of cultural insight. The process revealed patterns in structure, language, and meaning that spoke to the cookbook's time, authorship, and audience. Through markup and computational tools, I was able to trace not just what people cooked, but how they thought, lived, and shared. It's a powerful reminder that even the most humble texts have stories to tell, if we know how to listen, both closely and broadly.</p>
+<br>
+<h2><a href="../TextAnalysis/Just-Wed_Cook_Book.xml" download="Alessandro-Text-Corpus">Click Here To Download The Text Corpus</a></h2>
+<br>
     </section>
   </body>
 </html>
