@@ -161,3 +161,25 @@ img {
     padding-top: 350px;
   }
 }
+
+div.twine {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+div.twine_statement {
+display: flex;
+flex-direction: column;
+margin-left: 20%;
+margin-right: 20%;
+}
+
+h2.twine {
+	text-align: center;
+}
+
+iframe.twine {
+	width: 1200px;
+	height: 800px;
+}

@@ -21,8 +21,33 @@
       <p class="center"><a href="mailto:Alessandropbx@hotmail.com">Alessandropbx@hotmail.com</a></p>
     </header>
     <section>
-      <h2>Nothing Here Yet...</h2>
-      <p>Check Back Later!</p>
+      <div class="twine">
+      <iframe class="twine" src="../Twine/TheCommute.html"> </iframe>
+    </div>
+    <div class="twine_statement">
+      <h2 class="twine">Artist's Statement</h2>
+      <p class="fancy">Here's what I learned from the process.</p>
+      <p>Throughout the development of “The Commute”, I gained a deep appreciation for how interactive fiction can blend gameplay mechanics with internal emotional states to create an immersive experience. Using Twine Harlowe taught me that even simple macros, like (set:), (if:), and (print:), can be powerful tools for shaping dynamic storytelling. One major takeaway was how delicate the balance between time, choice, and consequence can be. I learned to design with intentional constraints like the 20-minute countdown which isn't just a gameplay mechanic; it also reflects real-life pressures that make morning routines a mental negotiation between care and urgency.
+Working with variables like confidence, anxiety, and preparedness helped me think about the narrative value of stats. I also learned the importance of small design touches such as using colors to set mood, prompts to personalize the story, and hooks to manage outcomes based on previous choices. These tools allowed me to capture everyday nuances in a way that purely linear storytelling couldn’t.
+Perhaps most importantly, I learned how to create narrative tension using ordinary experiences like whether to speak up on the bus or what to eat for breakfast. By grounding choices in reality rather than fantasy, I came to understand how interactive fiction can be a space for empathy and introspection, not just escape.
+</p>
+      <p class="fancy">Here's what I found rewarding about the experience.</p>
+      <p>What I found most rewarding was seeing how player agency could transform a routine morning into a meaningful and individualized narrative. Being able to track internal states like anxiety and confidence across various scenes made the game feel responsive and alive. It was fulfilling to design a system where seemingly minor choices like putting on music, eating breakfast, or bringing a hoodie had ripple effects that subtly influenced later outcomes.
+Another rewarding aspect was the moment-to-moment personalization. Implementing the (prompt:) macro to ask for the player’s name and then using it in greetings and descriptions created a surprising level of emotional connection. I enjoyed crafting passages that allowed multiple valid paths, encouraging the player to reflect on their own habits and personalities.
+Seeing the bus ride evolve from a simple transitional scene into a socially charged and narratively rich environment was especially satisfying. Adding characters with overheard conversations, awkward interactions, and moral dilemmas gave the game a layer of realism that felt both intimate and authentic. It was gratifying to build these small but powerful moments into the structure and to watch how the narrative responded to emotional nuance.
+</p>
+      <p class="fancy">Here's what I found frustrating.</p>
+      <p>One of the most frustrating aspects was working within Harlowe's macro limitations. Despite being beginner-friendly, Harlowe occasionally rejected macros in ways that felt cryptic, especially when parsing logic involving variables like numbers versus booleans. I often encountered syntax errors that weren’t clearly explained, leading to long debugging sessions just to discover a misplaced parenthesis or incompatible condition. This slowed the creative process and made experimentation more difficult at times.
+Additionally, designing multiple branching choices that connect logically was more difficult than I anticipated. Ensuring narrative continuity so that every passage flows meaningfully into the next without contradictions requires a lot of testing and careful variable management. Writing dialogue and events that adapt to different player states (like having the hoodie or not) also meant writing more conditional checks than initially planned.
+Visual customization in Harlowe was another challenge. Macros like (bg:) or attempts to change styles dynamically often resulted in confusing errors. I wanted more aesthetic flexibility to reinforce emotion and tone, but Harlowe’s limitations made some of those ideas harder to execute elegantly.
+</p>
+      <p class="fancy">Here's what I would want to improve in a later version/future project.</p>
+      <p>In a future iteration, I would expand the stat system to create more visible and long-term consequences. For example, rather than only using confidence and anxiety to flavor the moment, I’d like them to open or close off certain dialogue options or influence relationships with recurring characters. This would reinforce replayability and give the player a clearer sense of how their identity is shaped over time.
+I would also like to introduce more environmental interactivity. For instance, giving the player opportunities to inspect objects or overhear different types of conversations that offer optional worldbuilding. Adding elements like text messages from friends, reminders, or calendar events could further ground the experience in the daily life of a student.
+On a technical level, I would improve the visual design with more polished styling, perhaps switching to SugarCube for more CSS control. This would allow me to refine the interface, animate certain transitions, or use visual cues (like mood-based color shifts) more seamlessly.
+Finally, I’d like to develop more interwoven subplots and character arcs throughout the day. By expanding the cast and the player’s potential influence on others, the story could explore themes of belonging, microaggressions, and routine resilience more deeply. These improvements would help the game reflect the complexity of real human mornings and the small but significant victories we face.
+<p>
+    </div>
     </section>
   </body>
 </html>
